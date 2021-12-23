@@ -1,0 +1,22 @@
+@mixin box-text ($f-f, $c, $f-s) {
+    font-family: $f-f;
+    color: $c;
+    font-size: $f-s;
+}
+
+@mixin background ($w, $h,  $b-i, $b-r, $b-s) {
+    width: $w;
+    height: $h;
+    background-image: $b-i;
+    background-repeat: $b-r;
+    background-size: $b-s;
+    
+}
+
+@mixin flexs ($d, $f-d, $j-c, $a-i) {
+    display: $d;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+    align-items: $a-i;
+}
+

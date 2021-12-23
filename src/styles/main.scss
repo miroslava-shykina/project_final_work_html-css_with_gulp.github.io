@@ -1,0 +1,1038 @@
+@import 'base/fonts';
+@import 'base/mixins';
+@import 'base/reset';
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+
+    header{
+        @include background (100%, 700px, url(../images/header.png), no-repeat, contain);
+        margin-top: 10px;
+
+        .__haed{
+            @include flexs (flex, 0, space-around, 0);
+            padding-top: 40px;
+        
+            .__dreamshare {
+                @include box-text (Monotserrat-bolt, #FFFFFF, 20px);
+                align-self: center;
+            }
+
+            .__login-signap{
+                @include flexs (flex, row, flex-end, 0);
+                width: 291px;
+                height: 35px;
+            }
+                
+            .__login{
+                @include box-text (Monotserrat-regular, #FFFFFF, 14px);
+                align-self: center;
+                margin-right: 19px;
+            }
+
+            .__button{
+                width: 90px;
+                height: 36px;
+                background-color:rgba(0, 0, 0, 0);
+                border-radius: 40px;
+                border: 1px solid #FFFFFF;
+                @extend .__login;
+                margin-right: 42px;
+            }
+        }
+
+        .__title-text{
+            @include flexs (flex, column, 0, center);
+            margin-top: 146px;
+
+            .__title{
+                width: 470px;
+                height: 126px;
+                @include flexs (flex, column, 0, center);
+        
+
+                .__font{
+                    @include box-text (Monotserrat-bolt, #FFFFFF, 52px);
+                    align-self: center;
+                    margin-top: 10px;
+                }
+            }
+
+            .__text{
+                @include box-text (Roboto-light, #FFFFFF, 24px);
+                margin-top: 32px;
+            }
+
+            .__button-red{
+                width: 225px;
+                height: 40px;
+                color: #FFFFFF;
+                font-family: Monotserrat-bolt;
+                background-color: #FF4E50;
+                border-radius: 40px;
+                border: rgba(0, 0, 0, 0);
+                margin-top: 33px;
+            }
+        }
+        
+    }
+
+    main{
+        width: 100%;
+    
+        .how-it-works{
+            width: 940px;
+            height: 461px;
+            margin: 91px auto;
+            
+            .__dreamshare{
+                width: 100%;
+                height: 65px;
+                font-family: Monotserrat-bolt;
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .__block-three-foto{
+                @include flexs (flex, row, space-between, 0);
+                flex-wrap: nowrap;
+
+                .__foto-1{
+                    @include background (300px, 400px, url(../images/Step-1.png), no-repeat, contain);
+                    display: flex;
+                    padding: 21px 26px;
+                }
+
+                .__foto-2{
+
+                    @include background (300px, 400px, url(../images/Step-2.png), no-repeat, contain);
+                    display: flex;
+                    padding: 21px 26px;
+
+                    .__title-2{
+                        display: flex;
+                    }
+
+                    .__text-2{
+                        @include box-text (Roboto-light, #E3E3E3, 14px);
+                        margin-top: 22px;
+                    }
+
+                    .__button-red-2{
+                        width: 70px;
+                        height: 20px;
+                        color: #FFFFFF;
+                        font-family: Monotserrat-regular;
+                        background-color: #FF4E50;
+                        border-radius: 10px;
+                        border: rgba(0, 0, 0, 0);
+                        margin-bottom: 20px;
+                    }
+    
+                }
+                    
+                .__foto-3{
+                    @include background (300px, 400px, url(../images/Step-3.png), no-repeat, contain);
+                    display: flex;
+                    padding: 21px 26px;
+                }
+
+                .__title-text{
+                    @include flexs (flex, column, flex-end, flex-start);
+                }
+
+                .__button-red{
+                    width: 70px;
+                    height: 20px;
+                    color: #FFFFFF;
+                    font-family: Monotserrat-regular;
+                    background-color: #FF4E50;
+                    border-radius: 10px;
+                    border: rgba(0, 0, 0, 0);
+                    margin-bottom: 20px;
+                    margin-left: 0px;
+
+                }
+
+                .__font{
+                    @include box-text (Monotserrat-bolt, #FFFFFF, 24px);
+                    align-self: center;
+                    margin-top: 1px;    
+                }
+
+                .__text{
+                    @include box-text (Roboto-light, #E3E3E3, 14px);
+                    margin-top: 28px;
+                }
+                
+            }
+
+        }
+
+        .Meet-partner{
+            width: 941px;
+            height: 460px;
+            margin: 0 auto;
+            @include flexs (flex, column, 0, 0);
+
+            .__meet{
+                width: 100%;
+                height: 65px;
+                font-family: Monotserrat-bolt;
+                font-size: 26px;
+                text-align: center;
+                padding-top: 4px;
+            }
+
+            .__person{
+                width: 100%;
+                height: 261px;
+                @include flexs (flex, column, space-between, 0);
+                margin-top: 4px;
+                flex-wrap: wrap;
+            
+                .__block{
+                    width: 221px;
+                    height: 223px;
+                    @include flexs (flex, column, 0, center);
+
+                    .__foto-1{
+                        @include background (120px, 120px, url(../images/Photo1.png), no-repeat, contain);
+                        border-radius: 50%;
+                        @include flexs (flex, 0, flex-end, flex-end);
+                        flex-wrap: wrap;
+                        position: relative;
+                        
+
+                        .__backgraund-aicon{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #FF4E50;
+                            border-radius: 50%;
+                            border: 5px solid white;
+                            position: absolute;
+                            bottom: -3px;
+                            right: -5px;
+
+                            .__aicon{
+                                width: 28px; 
+                                height: 28px;
+                                background-image: url(../images/music2.png);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+
+                    .__foto-2{
+                        @include background (120px, 120px, url(../images/Avatar2.png), no-repeat, contain);
+                        border-radius: 50%;
+                        @include flexs (flex, 0, flex-end, flex-end);
+                        flex-wrap: wrap;
+                        position: relative;
+
+                        .__backgraund-aicon{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #19D4CA;
+                            border-radius: 50%;
+                            border: 5px solid white;
+                            position: absolute;
+                            bottom: -3px;
+                            right: -5px;
+
+                            .__aicon{
+                                width: 28px; 
+                                height: 28px;
+                                background-image: url(../images/brush.png);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin: 0 auto;   
+                            }
+                        }
+                    }
+
+                    .__foto-3{
+                        @include background (120px, 120px, url(../images/Photo3.png), no-repeat, contain);
+                        border-radius: 50%;
+                        @include flexs (flex, 0, flex-end, flex-end);
+                        flex-wrap: wrap;
+                        position: relative;
+
+                        .__backgraund-aicon{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #FFA710;
+                            border-radius: 50%;
+                            border: 5px solid white;
+                            position: absolute;
+                            bottom: -3px;
+                            right: -5px;
+
+                            .__aicon{
+                                width: 28px; 
+                                height: 28px;
+                                background-image: url(../images/Shape3.png);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin: 0 auto;
+                                
+                            }
+                        }
+                    }
+                    .__foto-4{
+                        @include background (120px, 120px, url(../images/Bitmap4.png), no-repeat, contain);
+                        border-radius: 50%;
+                        @include flexs (flex, 0, flex-end, flex-end);
+                        flex-wrap: wrap;
+                        position: relative;
+
+                        .__backgraund-aicon{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #667DF3;
+                            border-radius: 50%;
+                            border: 5px solid white;
+                            position: absolute;
+                            bottom: -3px;
+                            right: -5px;
+
+                            .__aicon{
+                                width: 28px; 
+                                height: 28px;
+                                background-image: url(../images/Shape4.png);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin: 0 auto;
+                                
+                            }
+                        }
+                    }
+
+                    .__font{
+                        @include box-text (Monotserrat-bolt, #444444, 14px);
+                        margin-top: 20px;
+                    }
+
+                    .__text-4{
+                        @include box-text (Roboto-light, #666666, 14px);
+                        text-align: center;
+                        margin-top: 29px;
+                    }
+
+                    .__text{
+                        @include box-text (Roboto-light, #666666, 14px);
+                        text-align: center;
+                        margin-top: 24px;
+                    }
+                } 
+            }    
+
+            .__button-red{
+                width: 180px;
+                height: 40px;
+                @include box-text (Monotserrat-bolt, #FF4E50, 14px);
+                border: 3px solid #FF4E50;
+                border-radius: 40px;
+                margin:0 auto;
+                background-color: white;
+
+            }
+        }
+
+        .discover{
+            width: 940px;
+            height: 1126px;
+            margin: 0 auto;
+            @include flexs (flex, column, 0, 0);
+
+
+            .__holiday{
+                
+                width: 100%;
+                height: 66px;
+                font-family: Monotserrat-bolt;
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .__collage{
+                width: 100%;
+                height: 1000px;
+                display:grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: 310px 310px 310px;
+                gap: 20px;
+
+                .__foto-1{
+                    background-image: url(../images/Bitmap-1-1.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:1/2;
+                    grid-row:1/2;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-2{
+                    background-image: url(../images/Object-2-2.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:2/3;
+                    grid-row:1/2;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-3{
+                    background-image: url(../images/Object-3-3.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:3/4;
+                    grid-row:1/2;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-4{
+                    background-image: url(../images/Bitmap-4-4.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:1/2;
+                    grid-row:2/3;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-5{
+                    background-image: url(../images/Object-5-5.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:2/4;
+                    grid-row:2/3;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-6{
+                    background-image: url(../images/Bitmap-6-6.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:1/3;
+                    grid-row:3/4;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__foto-7{
+                    background-image: url(../images/Object-7-7.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    grid-column:3/4;
+                    grid-row:3/4;
+                    @include flexs (flex, column, center, center);
+                }
+
+                .__title{
+                    @include box-text (Monotserrat-bolt, #FFFFFF, 22px);
+                }
+            }
+        }
+
+        .Interests{
+            width: 482px;
+            height: 254px;
+            margin: 0 auto;
+            @include flexs (flex, column, 0, center);
+
+            .__title{
+                width: 100%;
+                height: 81px;
+                font-family: Monotserrat-bolt;
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .__coment{
+                height: 41px;
+                @include box-text (Roboto-light, #666666, 18px);
+            }
+
+            .__block-search{
+                width: 483px;
+                height: 40px;
+                @include flexs (flex, 0, space-between, 0);
+                flex-direction: row;
+    
+                input{
+                    width: 299px;
+                    height: 40px;
+                    border: 1px solid #D4D4D4;
+                }
+
+                .__button-red{
+                    width: 172px;
+                    height: 40px;
+                    @include box-text (Monotserrat-bolt, white, 14px);
+                    border-radius: 40px;
+                    background-color: #FF4E50;
+                    border: rgba(0, 0, 0, 0);
+                }
+
+                [placeholder]{
+                    @include box-text (Roboto-light, #999999, 14px);
+                    padding: 14px;
+                }
+            }
+        }
+    }
+    hr{
+        block-size: 3px;
+        background-color: #FF4E50;
+        border: rgba(0, 0, 0, 0);
+    }
+
+    footer{
+        width: 100%;
+        height: 224px;
+        @include flexs (flex, 0, space-evenly, 0);
+        padding-top: 30px;
+    
+
+        .__footer-left{
+            width: 629px;
+            height: 100%;
+            @include flexs (flex, 0, space-around, 0);
+            justify-content: space-around;
+
+            .__block-1{
+                @include box-text (Monotserrat-regular, #FF4E50, 16px);
+            }
+
+            .__block-2, .__block-3{
+                @include box-text (Monotserrat-bolt, #444444, 14px);
+
+                ul{
+                    margin-top: 20px;
+                }
+                .__list{
+                    @include box-text (Roboto-light, #999999, 14px);
+                    height: 26px;
+                }
+            }
+        }
+
+        .__block-4{
+            @include box-text (Monotserrat-bolt, #CCCCCC, 10px);
+
+            .__logo{
+                width: 110px;
+                height: 24px;
+                background-image: url(../images/Bitmap.png);
+                margin-top: 7px;
+            }
+        }
+        
+    }
+
+}
+
+@media screen and (max-width:1460px) and (min-width:768px){
+    
+    .container{
+        width: 768px;
+
+        header{
+            background-size: cover;
+            background-position: center;
+
+            .__haed{
+                justify-content: space-between;
+
+                .__dreamshare {
+                margin-left: 49px;
+                }
+
+                .__login-signap{
+                    margin-right: 8px;
+                }
+            }
+        }
+        
+        main{
+            .how-it-works{
+                width: 748px;
+                margin: 91px auto;
+
+                .__dreamshare{
+                    height: 65px;
+                    font-size: 22px;
+                    padding-top: 6px;
+                }
+
+                .__block-three-foto{
+
+                    .__foto-1{
+                        width: 236px;
+                        background-size: cover;
+                        padding: 17px 21px;
+                    }
+
+                    .__foto-2{
+                        width: 236px;
+                        background-size: cover;
+                        padding: 17px 21px;
+
+                        .__title-2{
+                            display:flex;
+                            flex-direction: column;
+
+                        }
+                        .__text-2{
+                            margin-top: 19px;
+                        }
+
+                        .__button-red-2{
+                            margin-bottom: 18px;
+                        }
+                    }
+                    .__foto-3{
+                        width: 236px;
+                        background-size: cover;
+                        padding: 17px 21px;
+                    }
+    
+                    .__button-red{
+                        margin-bottom: 48px;
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                    }
+    
+                    .__font{
+                        margin-top: -9px;    
+                    }
+    
+                    .__text{
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            .Meet-partner{
+                width: 480px;
+                height: 706px;
+
+                .__meet{
+                    font-size: 22px;
+                    padding-top: 9px;
+                }
+
+                .__person{
+                    height: 504px;
+                }
+
+                .__block{
+                    height: 259px;
+                }
+            }
+
+            .discover{
+                width: 748px;
+
+                .__holiday{
+                    font-size: 22px;
+                }
+
+                .__collage{
+                    height: 1000px;
+                    grid-template-columns: 236px 236px 236px;
+                    
+                    
+                    .__foto-1{
+                        background-position: center;
+                    }
+
+                    .__foto-2{
+                        background-position: center;
+                    }
+
+                    .__foto-3{
+                        background-position: center;
+                    }
+
+                    .__foto-4{
+                        background-position: center;
+                    }
+
+                    .__foto-5{
+                        background-position: center;
+                    }
+                }
+    
+            }
+
+            .Interests{
+        
+                .__title{
+                    font-size: 22px;
+                }
+            }
+        } 
+        
+        footer{
+            justify-content: space-between;
+            .__footer-left{
+                width: 584px;
+
+                .__block-1{
+                    margin-left: 1px;
+                }
+
+                .__block-2{
+                    text-align: center;
+                }
+
+                .__block-3{
+                    padding-right: 44px;
+                }
+            }
+
+            .__block-4{
+                margin-right: 39px;
+            }
+        }
+    
+    }
+
+
+}
+
+
+
+@media screen and (max-width:768px) and (min-width:320px){
+
+    .container{
+        width: 320px;
+
+        header{
+            height: 540px;
+            background-image: url(../images/fotos/B2.png);
+            background-position: center;
+
+            .__haed{
+                flex-direction: column-reverse;
+                padding-top: 21px;
+
+                .__dreamshare {
+                    margin-left: 0px;
+                    height: 120px;
+                    @include flexs (flex, column, flex-end, 0);
+                }
+
+                .__login-signap{
+                    margin-right: 8px;
+                    padding-right: 12px;
+                }
+
+                .__button{
+                    border: 2px solid #FFFFFF;
+                }
+            }
+
+            .__title-text{
+                padding: 0 20px;
+                margin-top: 21px;
+
+                .__title{
+                    height: 89px;
+
+                    .__font{
+                        font-size: 30px;
+                    }
+                }
+
+                .__text{
+                    font-size: 18px;
+                    margin-top: 0px;
+                    text-align: center;
+                    height: 61px;
+                }
+
+                .__button-red{
+                    width: 280px;
+                    height: 40px;
+                    margin-top: 0px;
+                }
+            }
+            
+        }
+
+        main{
+            .how-it-works{
+                width: 300px;
+                height: 100%;
+                margin: 10px auto 22px auto;
+
+                .__dreamshare{
+                    padding-top: 27px;
+                    font-size: 22px;
+                }
+
+                .__block-three-foto{
+                    flex-direction: column;
+
+                    .__foto-1{
+                        @include background (300px, 240px, url(../images/c-1-1-1.png), no-repeat, cover);
+                        background-position: center;
+                        padding: 14px 25px 16px 20px;
+                        margin-bottom: 12px;
+                    }
+
+                    .__foto-2{
+                        @include background (300px, 240px, url(../images/O-2-2-2.png), no-repeat, cover);
+                        background-position: center;
+                        padding: 14px 25px 16px 22px;
+                        margin-bottom: 12px;
+
+                        .__title-2{
+                            display:flex;
+                            flex-direction: row;
+                        }
+
+                        .__button-red-2{
+                            margin-bottom: 35px;
+                        }
+                    }
+
+                    .__foto-3{
+                        @include background (300px, 240px, url(../images/Step-3.png), no-repeat, cover);
+                        background-position: center;
+                        padding: 14px 25px 19px 20px;
+                        margin-bottom: 12px;
+                    }
+
+                    .__button-red{
+                        margin-bottom: 48px;
+                        margin-left: 0px;
+    
+                    }
+    
+                    .__font{
+                        margin-top: -8px;    
+                    }
+
+                    .__text{
+                    margin-top: 19px;
+                     }
+
+                     
+
+                }
+            }
+
+            .Meet-partner{
+                width: 320px;
+                height: 1030px;
+                margin-bottom: 38px;
+                .__meet{
+                        width: 320px;
+                        height: 52px;
+                        font-size: 22px;
+                        padding-top: 4px;
+                        margin-bottom: 18px;
+                        line-height: 23px;
+                    }
+
+                    .__person{
+                        width: 320px;
+                        height: 940px;
+                        @include flexs (0, column, flex-start, 0);
+                        margin: 0 auto;
+                    }
+                    
+
+                    .__block{
+                        width: 236px;
+                        height: 228px;
+                        margin: 0px auto 0px auto;
+
+                        .__text-4{
+                            margin-top: 23px;
+                        }
+                    }
+            }
+            
+            .discover{
+                width: 300px;
+                height: 978px;
+                margin: 0 auto;
+                @include flexs (flex, column, 0, 0);
+
+                .__holiday{
+                        height: 66px;
+                        font-size: 22px;
+                        line-height: 25px;
+                        width: 282px;
+                        padding-left: 17px;
+                        margin-bottom: 35px;
+                }
+
+                .__collage{
+                    width: 100%;
+                    height: 1000px;
+                    display:grid;
+                    grid-template-columns: 300px;
+                    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+                    gap: 10px;
+
+                    .__foto-1{
+                        grid-column:1/2;
+                        grid-row:1/2;
+                        padding: 0px 46px 31px 46px;
+                        text-align: center;          
+                    }
+
+                    .__foto-2{
+                        grid-column:1/2;
+                        grid-row:2/3;
+                        padding: 0px 46px 7px 46px;
+                        text-align: center;          
+                    }
+
+                    .__foto-3{
+                        grid-column:1/2;
+                        grid-row:3/4;
+                    }
+
+                    .__foto-4{
+                        grid-column:1/2;
+                        grid-row:4/5;
+                    }
+
+                    .__foto-5{
+                        grid-column:1/2;
+                        grid-row:5/6;
+                    }
+
+                    .__foto-6{
+                        grid-column:1/2;
+                        grid-row:6/7;
+                    }
+
+                    .__foto-7{
+                        grid-column:1/2;
+                        grid-row:7/8;
+                        background-position: top;
+                        background-image: url(../images/two.png);
+                    }
+                        
+                }
+    
+            }
+
+            .Interests{
+                width: 300px;
+                height: 264px;
+                margin: 0 auto;
+                @include flexs (flex, column, flex-start, center);
+    
+                .__title{
+                    height: 89px;
+                    font-family: Monotserrat-bolt;
+                    font-size: 22px;
+                    text-align: center;
+                    @include flexs (flex, column, flex-end, 0);
+                }
+
+                .__coment{
+                    @include flexs (flex, column, flex-end, 0);
+                    margin-bottom: 13px;
+                }
+
+                .__block-search{
+                    width: 483px;
+                    height: 90px;
+                    @include flexs (flex, column, 0, center);
+                    
+                    input{
+                        width: 280px;
+                    }
+    
+                    .__button-red{
+                        width: 280px;
+                    }
+
+                }
+    
+            }
+        }
+
+        footer{
+            width: 100%;
+            height: 224px;
+            @include flexs (flex, column, start, 0);
+            padding-top: 0px;
+            margin: 0 auto;
+        
+    
+            .__footer-left{
+                @include flexs (flex, column, flex-start, center);
+                width: 320px;
+                height: 153px;
+
+                .__block-1{
+                    font-family: Monotserrat-regular;
+                    color: #FF4E50;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-top: 14px;
+                }
+    
+                .__block-2{
+                    width: 290px;
+                    height: 49px;
+                    font-family: Monotserrat-bolt;
+                    color: #444444;
+                    font-size: 14px;
+                    text-align: center;
+                    display: inline;
+                    margin: 16px 0px 28px 0px;
+
+
+                    ul{
+                        margin-top: 6px;
+                    
+                        li{
+                            margin: 20px 10px 0px 10px;
+                            display: inline;
+                            line-height: 24px;
+
+                        }
+                        .__list{
+                            height: 10px;
+                            font-family: Roboto-light;
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+    
+            .__block-4{
+                width: 320px;
+                height: 42px;
+                text-align: center;
+                @include flexs (flex, column, space-between, center);
+                padding-bottom: 10px;
+    
+                .__logo{
+                    width: 110px;
+                    height: 24px;
+                    background-image: url(../images/Bitmap.png);
+                    margin-top: 0px;
+                    align-items: center;
+                }
+            }
+            
+        }
+    
+    }
+
+}
